@@ -1,0 +1,11 @@
+[Unit]
+Description=kfe server
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=_PROJECT_DIR_/systemd/start_kfe_server.sh
+
+[Install]
+WantedBy=graphical-session.target
+
